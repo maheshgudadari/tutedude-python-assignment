@@ -7,14 +7,10 @@ print("3.multiplication")
 print("4.division")
 print("5.exit")
 
-print("please choose your option")
+option=int(input("please choose your option::"))
 
-option=int(input())
-
-print("enter 1st number")
-num1=int(input())
-print("enter 2nd number")
-num2=int(input())
+num1=int(input("enter 1st number::"))
+num2=int(input("enter 2nd number::"))
 
 result=0
 if option == 1:
@@ -26,5 +22,10 @@ elif option == 3:
 elif option == 4:
  result=num1/num2
 
-print("result for given opeeration is::- ")
-print(result)
+print("result for given opeeration is::- ", result)
+
+# Task 2: Create a Personalized Greeting
+fName=input("enter your first name:")
+lName=input("enter your last name:")
+
+print('Hello,',fName +' '+ lName + ' ! welcome to the Python program.')
